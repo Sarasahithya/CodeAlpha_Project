@@ -1,0 +1,128 @@
+:root {
+    /* --block-color1: #b62d88;*/
+    --block-color2: #73919e;
+    --block-color3: #fdc4f3;
+   /* --back-color1: hsl(322, 85%, 21%);*/
+    --back-color2: #ffc1cc;
+    --back-color3:#fdc4f3;
+  } 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(
+      #f3c0eb,
+      #f3a0e8 20%,
+      #de9ae7 21%,
+      #e672f5 100%
+    );
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.image-container {
+    background-image: url("block.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent; 
+}
+.display {
+    background-color: rgb(255, 176, 242);
+    color: #0e0c0c;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: repeating-linear-gradient(
+        90deg,
+        var(--block-color2),
+        var(--block-color2),
+        var(--back-color2) 15%
+      );
+}
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #161515;
+    background-color: #1d1c1c;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-bottom: 3vh solid var(--block-color1);
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        var(--block-color1),
+        var(--block-color1) 6%,
+        var(--back-color1) 6%,
+        var(--back-color1) 9%
+      );
+}
+.btn:hover {
+    background-color: #f0f0f0;
+}
+.dot{
+    background-color: rgb(37, 37, 37);
+    color: rgb(22, 21, 21);
+    border: 1px solid #161515;
+    background: repeating-linear-gradient(
+        var(--block-color3),
+        var(--block-color3) 6%,
+        var(--back-color3) 6%,
+        var(--back-color3) 9%
+      );
+}
+.operator {
+    background-color: rgb(37, 37, 37);
+    color: rgb(22, 21, 21);
+    border: 1px solid #161515;
+    background: repeating-linear-gradient(
+        var(--block-color3),
+        var(--block-color3) 6%,
+        var(--back-color3) 6%,
+        var(--back-color3) 9%
+      );
+}
+.operator:hover {
+    background-color: rgb(46, 44, 44);
+}
+.equal {
+    grid-column: span 2;
+    background-color: #1c1d1c;
+    color: rgb(34, 32, 32);
+    background: repeating-linear-gradient(
+        var(--block-color3),
+        var(--block-color3) 6%,
+        var(--back-color3) 6%,
+        var(--back-color3) 9%
+      );
+}
+.equal:hover {
+    background-color: #101110;
+}
+.clear {
+    grid-column: span 2;
+    background-color: rgb(26, 25, 25);
+    color: rgb(24, 22, 22);
+    border: 1px solid #161515;
+    background: repeating-linear-gradient(
+        var(--block-color3),
+        var(--block-color3) 6%,
+        var(--back-color3) 6%,
+        var(--back-color3) 9%
+      );
+}
+.clear:hover {
+    background-color: rgb(17, 17, 17);
+}
