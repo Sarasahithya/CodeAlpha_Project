@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ad1461;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.image-container {
+    background-image: url("background.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent; 
+}
+.music-player {
+    background-color: rgb(126, 186, 236);
+    border: 1px solid #990c99;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(110, 11, 11, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+.player-info {
+    margin-bottom: 20px;
+    color: #e619a8;
+}
+.controls {
+    margin-bottom: 20px;
+}
+.control-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #d75bdb;
+    color: rgb(87, 190, 231);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.control-btn:hover {
+    background-color: #e64784;
+}
+.progress-container {
+    display: flex;
+    align-items: center;
+}
+#progress-bar {
+    width: 100%;
+    margin: 0 10px;
+}
